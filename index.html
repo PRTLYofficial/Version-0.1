@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRTLY — Fighting Deepfakes with AI + Blockchain</title>
+  <meta name="description" content="PRTLY verifies images, videos, and audio with AI, then records proof on-chain. 100M fixed-supply token powering trust for the internet.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <!-- paste header snippet here -->
+  <header role="banner">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="PRTLY home">
+        <img src="assets/img/logo.svg" class="logo" alt="PRTLY logo"><span>PRTLY</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a><a href="technology.html">Technology</a><a href="token.html">Tokenomics</a>
+        <a href="roadmap.html">Roadmap</a><a href="blog.html">Blog</a><a href="whitepaper.html">Whitepaper</a>
+        <a href="team.html">Team</a><a href="contact.html">Contact</a>
+        <button class="btn btn-small" data-open="wallet">Connect Wallet</button>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden role="dialog" aria-modal="true" aria-label="Mobile Menu">
+      <a href="index.html">Home</a><a href="technology.html">Technology</a><a href="token.html">Tokenomics</a>
+      <a href="roadmap.html">Roadmap</a><a href="blog.html">Blog</a><a href="whitepaper.html">Whitepaper</a>
+      <a href="team.html">Team</a><a href="contact.html">Contact</a>
+      <button class="btn" data-open="wallet">Connect Wallet</button>
+    </div>
+  </header>
+
+  <main class="hero" aria-labelledby="hero-title">
+    <canvas id="mesh" aria-hidden="true"></canvas>
+    <div class="container">
+      <span class="chip">Fixed Supply: 100M $PRTLY</span>
+      <h1 id="hero-title">Fighting Deepfakes with AI + Blockchain</h1>
+      <p>PRTLY verifies images, videos, and audio—then records proof on-chain so truth can travel with content.</p>
+      <div class="cta-row">
+        <a class="btn" href="whitepaper.html">Read Whitepaper</a>
+        <a class="btn btn-ghost" href="blog.html">Latest Updates</a>
+      </div>
+    </div>
+  </main>
+
+  <section class="section">
+    <div class="container panel">
+      <h2 class="section-title">Why PRTLY exists</h2>
+      <p class="section-sub">Deepfakes are exploding. Newsrooms, brands, and creators need a simple way to check what’s real. PRTLY uses AI to detect manipulations and writes a proof to the blockchain. Anyone can verify the content later—fast and without trusting a middleman.</p>
+      <div class="grid cards-3">
+        <article class="card"><div class="icon" aria-hidden="true">🔎</div><h3>Scan & Detect</h3><p>AI flags manipulations in image, video, or audio.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">🔗</div><h3>Record the Proof</h3><p>We anchor a fingerprint on-chain for immutable traceability.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">🛡️</div><h3>Share with Confidence</h3><p>A verification tag goes with the content anywhere it’s posted.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container panel">
+      <h2 class="section-title">$PRTLY Tokenomics</h2>
+      <p class="section-sub">$PRTLY powers verification, staking, and future marketplace utilities. Supply is fixed at 100,000,000 tokens.</p>
+      <div class="tokenomics">
+        <div class="pie" role="img" aria-label="Token distribution: 40% Public Sale, 20% AI R&D, 15% Team & Advisors, 15% Marketing & Community, 10% Liquidity Lock"></div>
+        <ul class="legend">
+          <li><span class="sw c1"></span> Public Sale — <strong>40%</strong></li>
+          <li><span class="sw c2"></span> AI R&D — <strong>20%</strong></li>
+          <li><span class="sw c3"></span> Team & Advisors — <strong>15%</strong></li>
+          <li><span class="sw c4"></span> Marketing & Community — <strong>15%</strong></li>
+          <li><span class="sw c5"></span> Liquidity Lock — <strong>10%</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="container foot">
+      <small>© 2025 PRTLY. All rights reserved.</small>
+      <nav aria-label="Legal">
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclaimer</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Wallet Modal -->
+  <dialog id="walletModal">
+    <form method="dialog" class="wallet">
+      <h3>Connect Wallet (placeholder)</h3>
+      <p>This is a visual demo. In production, integrate Phantom/Solana.</p>
+      <label for="contractInput">Contract address (you can change later)</label>
+      <input id="contractInput" placeholder="COMING_SOON" />
+      <menu><button value="cancel">Cancel</button><button id="saveContract" value="confirm" class="btn btn-small">Save</button></menu>
+    </form>
+  </dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+        </html>
