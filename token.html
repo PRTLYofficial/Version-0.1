@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRTLY — Tokenomics</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header role="banner">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/img/logo.svg" class="logo" alt="">PRTLY</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a><a href="technology.html">Technology</a><a href="token.html">Tokenomics</a>
+        <a href="roadmap.html">Roadmap</a><a href="blog.html">Blog</a><a href="whitepaper.html">Whitepaper</a>
+        <a href="team.html">Team</a><a href="contact.html">Contact</a>
+        <button class="btn btn-small" data-open="wallet">Connect Wallet</button>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="index.html">Home</a><a href="technology.html">Technology</a><a href="token.html">Tokenomics</a>
+      <a href="roadmap.html">Roadmap</a><a href="blog.html">Blog</a><a href="whitepaper.html">Whitepaper</a>
+      <a href="team.html">Team</a><a href="contact.html">Contact</a>
+      <button class="btn" data-open="wallet">Connect Wallet</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container panel">
+      <h1 class="section-title">$PRTLY Tokenomics</h1>
+      <p class="section-sub">Fixed supply: 100,000,000. Powers verification, staking, and governance.</p>
+      <div class="tokenomics">
+        <div class="pie" role="img" aria-label="Token distribution: 40% Public Sale, 20% AI R&D, 15% Team & Advisors, 15% Marketing & Community, 10% Liquidity Lock"></div>
+        <ul class="legend">
+          <li><span class="sw c1"></span> Public Sale — <strong>40%</strong></li>
+          <li><span class="sw c2"></span> AI R&D — <strong>20%</strong></li>
+          <li><span class="sw c3"></span> Team & Advisors — <strong>15%</strong></li>
+          <li><span class="sw c4"></span> Marketing & Community — <strong>15%</strong></li>
+          <li><span class="sw c5"></span> Liquidity Lock — <strong>10%</strong></li>
+        </ul>
+      </div>
+      <p class="note">Network: Solana • Contract: <code id="contract">COMING_SOON</code></p>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container foot">
+      <small>© 2025 PRTLY.</small>
+      <nav><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclaimer</a></nav>
+    </div>
+  </footer>
+
+  <!-- Wallet modal same as others -->
+  <dialog id="walletModal"> <form method="dialog" class="wallet">
+    <h3>Connect Wallet (placeholder)</h3><label>Contract</label><input id="contractInput" placeholder="COMING_SOON" />
+    <menu><button value="cancel">Cancel</button><button id="saveContract" value="confirm" class="btn btn-small">Save</button></menu>
+  </form></dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
