@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRTLY — Technology</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header (same as index) -->
+  <header role="banner">
+    <div class="container nav">
+      <a class="brand" href="index.html"><img src="assets/img/logo.svg" class="logo" alt="">PRTLY</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html">Home</a><a href="technology.html">Technology</a><a href="token.html">Tokenomics</a>
+        <a href="roadmap.html">Roadmap</a><a href="blog.html">Blog</a><a href="whitepaper.html">Whitepaper</a>
+        <a href="team.html">Team</a><a href="contact.html">Contact</a>
+        <button class="btn btn-small" data-open="wallet">Connect Wallet</button>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <a href="index.html">Home</a><a href="technology.html">Technology</a><a href="token.html">Tokenomics</a>
+      <a href="roadmap.html">Roadmap</a><a href="blog.html">Blog</a><a href="whitepaper.html">Whitepaper</a>
+      <a href="team.html">Team</a><a href="contact.html">Contact</a>
+      <button class="btn" data-open="wallet">Connect Wallet</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container panel">
+      <h1 class="section-title">How the engine works</h1>
+      <p class="section-sub">Client SDKs → AI detection → Fingerprint & on-chain proof → Verify anywhere.</p>
+      <div class="grid cards-4">
+        <article class="card"><h3>1) Upload</h3><p>User/app submits media (or hash) for checking.</p></article>
+        <article class="card"><h3>2) AI Analysis</h3><p>Detector ensemble inspects artifacts, compression residuals, and edits.</p></article>
+        <article class="card"><h3>3) Fingerprint & Proof</h3><p>Cryptographic fingerprint + model version anchored on-chain.</p></article>
+        <article class="card"><h3>4) Verify Anywhere</h3><p>Anyone can re-check media against the on-chain record.</p></article>
+      </div>
+      <p class="note">Privacy-first: only fingerprints and minimal metadata are stored—never raw media.</p>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container foot">
+      <small>© 2025 PRTLY.</small>
+      <nav><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclaimer</a></nav>
+    </div>
+  </footer>
+
+  <!-- Wallet modal -->
+  <dialog id="walletModal"> <form method="dialog" class="wallet">
+    <h3>Connect Wallet (placeholder)</h3><label>Contract</label><input id="contractInput" placeholder="COMING_SOON" />
+    <menu><button value="cancel">Cancel</button><button id="saveContract" value="confirm" class="btn btn-small">Save</button></menu>
+  </form></dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+  </html>
